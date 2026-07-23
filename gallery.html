@@ -51,7 +51,8 @@
         <nav class="nav" data-nav aria-label="Primary">
           <ul class="nav__links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#story">His Story</a></li>
+            <li><a href="index.html#dowork">What We Do</a></li>
+            <li><a href="index.html#connor">Connor</a></li>
             <li><a href="index.html#family">The Family</a></li>
             <li><a href="gallery.html" aria-current="page">Gallery</a></li>
           </ul>
@@ -69,9 +70,9 @@
       <section class="gallery-hero">
         <svg class="hero__watermark" aria-hidden="true"><use href="#wings" /></svg>
         <div class="container">
-          <p class="kicker" style="justify-content: center; display: inline-flex">Event Gallery</p>
-          <h1 style="margin-top: 1rem">Moments that carry his light.</h1>
-          <p>
+          <p class="kicker" data-anim="up" style="justify-content: center; display: inline-flex">Event Gallery</p>
+          <h1 data-anim="mask" style="margin-top: 1rem">Moments that carry his light.</h1>
+          <p data-anim="up" style="--d: 0.08s">
             Every gathering, fundraiser, and act of kindness is Connor's memory
             in motion, a community showing up for one another.
           </p>
@@ -98,7 +99,7 @@
 
                (Phase 2 replaces this with the self-serve phone upload flow from
                PLAN.md, so the family never edits HTML.) -->
-          <div class="gallery reveal" data-gallery>
+          <div class="gallery" data-anim="up" data-gallery>
             <button
               class="gallery__item"
               data-full="assets/img/family-event.jpg"
@@ -141,6 +142,13 @@
 
     <footer class="site-footer">
       <div class="container">
+        <div class="footer__top">
+          <p>Ready to help a family in Connor's name?</p>
+          <a class="btn btn--lg" data-donate href="index.html#give">
+            <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
+            Donate now
+          </a>
+        </div>
         <div class="footer__grid">
           <div class="footer__brand">
             <img src="assets/img/logo.png" alt="Forever 13 Foundation" />
@@ -155,7 +163,8 @@
             <h4>Explore</h4>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#story">Connor's Story</a></li>
+              <li><a href="index.html#dowork">What We Do</a></li>
+              <li><a href="index.html#connor">Connor's Story</a></li>
               <li><a href="index.html#family">The Family</a></li>
               <li><a href="gallery.html">Event Gallery</a></li>
               <li><a href="index.html#give">Donate</a></li>

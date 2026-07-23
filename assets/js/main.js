@@ -66,32 +66,33 @@
     floatBar.classList.add("is-visible");
   }
 
-  /* ---------------------------------------------- Scroll reveal (subtle) */
-  var reveals = document.querySelectorAll(".reveal");
+  /* ------------------------------ Curated scroll animation (data-anim) */
+  var animEls = document.querySelectorAll("[data-anim], .reveal");
   var prefersReduced = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
-  if (reveals.length && "IntersectionObserver" in window && !prefersReduced) {
-    var revealObs = new IntersectionObserver(
+  function activate(el) {
+    // Per-element delay lives in CSS via the --d custom property; the class
+    // just triggers the transition. data-anim -> "in", .reveal -> "is-in".
+    el.classList.add(el.hasAttribute("data-anim") ? "in" : "is-in");
+  }
+  if (animEls.length && "IntersectionObserver" in window && !prefersReduced) {
+    var animObs = new IntersectionObserver(
       function (entries, obs) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-in");
+            activate(entry.target);
             obs.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.14, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
     );
-    reveals.forEach(function (el, i) {
-      // Gentle stagger for elements revealed together.
-      el.style.transitionDelay = (i % 4) * 80 + "ms";
-      revealObs.observe(el);
+    animEls.forEach(function (el) {
+      animObs.observe(el);
     });
   } else {
-    reveals.forEach(function (el) {
-      el.classList.add("is-in");
-    });
+    animEls.forEach(activate);
   }
 
   /* --------------------------------------------------------- Lightbox */

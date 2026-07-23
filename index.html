@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forever 13 Foundation | In Memory of Connor Taylor</title>
+    <title>Forever 13 Foundation | A Mississippi Nonprofit</title>
     <meta
       name="description"
-      content="Forever 13 Foundation is a Mississippi nonprofit founded in memory of Connor Taylor. We help families through unexpected hardships with community support, fundraising, and acts of kindness. Keep smiling."
+      content="Forever 13 Foundation is a Mississippi nonprofit that helps families through unexpected hardships with community support, fundraising, and acts of kindness. Founded in memory of Connor Taylor."
     />
-    <meta name="theme-color" content="#f6f1e8" />
+    <meta name="theme-color" content="#0a5cf5" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Forever 13 Foundation | In Memory of Connor Taylor" />
-    <meta property="og:description" content="Turning pain into purpose, one family at a time. Give in Connor's memory." />
+    <meta property="og:title" content="Forever 13 Foundation | A Mississippi Nonprofit" />
+    <meta property="og:description" content="Helping families through their hardest days. Turning pain into purpose, one family at a time." />
     <meta property="og:image" content="assets/img/connor-hero.jpg" />
     <link
       rel="icon"
@@ -43,6 +43,8 @@
       <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></symbol>
       <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.6" /><circle cx="8.5" cy="10" r="1.6" fill="currentColor" /><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M4 17l5-4 4 3 3-2 4 3" /></symbol>
       <symbol id="i-qr" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z" /><path fill="currentColor" d="M14 14h2v2h-2zM18 14h2v2h-2zM16 16h2v2h-2zM14 18h2v2h-2zM18 18h2v2h-2z" /></symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M4 11h16v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zM3 8h18v3H3zM12 8v12" /><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 8S10 3 7.5 4C5 5 7 8 12 8zM12 8s2-5 4.5-4C19 5 17 8 12 8z" /></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="6" cy="12" r="2.4" /><circle cx="18" cy="6" r="2.4" /><circle cx="18" cy="18" r="2.4" /><path d="M8.1 10.9l7.8-3.8M8.1 13.1l7.8 3.8" /></g></symbol>
     </svg>
 
     <!-- ============================== Header ============================= -->
@@ -54,12 +56,13 @@
         <nav class="nav" data-nav aria-label="Primary">
           <ul class="nav__links">
             <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="#story">His Story</a></li>
+            <li><a href="#dowork">What We Do</a></li>
+            <li><a href="#connor">Connor</a></li>
             <li><a href="#family">The Family</a></li>
             <li><a href="gallery.html">Gallery</a></li>
           </ul>
           <a class="btn" data-donate href="#give">
-            <svg aria-hidden="true"><use href="#i-heart" /></svg>Donate
+            <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>Donate
           </a>
           <button class="nav__toggle" data-nav-toggle aria-label="Menu" aria-expanded="false">
             <svg aria-hidden="true"><use href="#i-menu" /></svg>
@@ -75,23 +78,30 @@
         <div class="container">
           <div class="hero__grid">
             <div class="hero__content">
-              <p class="hero__meta">
-                A Mississippi nonprofit <span class="dot"></span> Est. 2024
-              </p>
-              <h1 class="hero__title">Forever <span class="thirteen">13</span></h1>
-              <p class="hero__script">keep smiling.</p>
+              <span class="hero__lockup">
+                <svg aria-hidden="true"><use href="#wings" /></svg>
+                <span>Forever 13 Foundation &middot; Est. 2024</span>
+              </span>
+              <h1 class="hero__title">
+                We help families through their <span class="u">hardest days</span>.
+              </h1>
               <p class="hero__copy">
-                Connor Taylor gave his whole heart to everyone he met. We built
-                this foundation to keep his kindness going, helping local
-                families through the hardest days no one should face alone.
+                Forever 13 is a Mississippi nonprofit that shows up for families
+                facing sudden hardship, with real, direct help. We were founded
+                in memory of <b>Connor Taylor</b>, and we carry his kindness
+                forward every single day.
               </p>
               <div class="hero__actions">
                 <a class="btn btn--lg" data-donate href="#give">
-                  <svg aria-hidden="true"><use href="#i-heart" /></svg>
-                  Donate in his memory
+                  <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
+                  Donate now
                 </a>
-                <a class="btn btn--ghost btn--lg" href="#story">Meet Connor</a>
+                <a class="btn btn--ghost btn--lg" href="#dowork">See how we help</a>
               </div>
+              <p class="hero__trust">
+                <svg aria-hidden="true"><use href="#i-heart" /></svg>
+                Every dollar goes straight to families in need.
+              </p>
             </div>
 
             <div class="hero__photo">
@@ -104,7 +114,7 @@
                     height="1474"
                   />
                 </div>
-                <figcaption>Connor</figcaption>
+                <figcaption>Connor, our why</figcaption>
               </figure>
               <div class="hero__sticker" aria-hidden="true">
                 <span><b>13</b>forever</span>
@@ -118,158 +128,193 @@
       <!-- ============================= Marquee ========================== -->
       <div class="marquee" aria-hidden="true">
         <div class="marquee__track">
-          <span>Keep Smiling</span><span class="alt">Forever 13</span><span>In Memory of Connor Taylor</span><span class="alt">Keep Smiling</span>
-          <span>Keep Smiling</span><span class="alt">Forever 13</span><span>In Memory of Connor Taylor</span><span class="alt">Keep Smiling</span>
+          <span>Community Support</span><span class="alt">Fundraising</span><span>Acts of Kindness</span><span class="alt">Forever 13</span>
+          <span>Community Support</span><span class="alt">Fundraising</span><span>Acts of Kindness</span><span class="alt">Forever 13</span>
         </div>
       </div>
 
-      <!-- ===================== Intro / who he was ======================= -->
-      <section class="section intro">
-        <div class="container intro__grid">
-          <div class="reveal">
-            <p class="kicker">Who he was</p>
-            <p class="intro__statement" style="margin-top: 1.1rem">
-              He had a heart <em>far bigger</em> than his 13 years.
-            </p>
-            <p class="intro__body">
-              Connor was one of the kindest, most humble, and well mannered
-              children anyone could ever meet. He loved helping people, and he
-              never expected a thing in return.
-            </p>
-            <div class="memory-note">
-              <span class="label">Miss Jones.</span>
-              <p>
-                Every day after the school bus, Connor crossed the street just to
-                sit and talk with our neighbor. On holidays, he fixed her a plate
-                of food and carried it over himself. That was simply who he was.
-              </p>
-            </div>
-          </div>
-          <figure class="intro__photo reveal">
-            <div class="frame-img">
-              <img
-                src="assets/img/connor-smile.jpg"
-                alt="Connor Taylor grinning in the car"
-                width="1179"
-                height="1557"
-              />
-            </div>
-            <figcaption>always smiling</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <!-- ============================== Story =========================== -->
-      <section class="section" id="story">
-        <div class="container">
-          <div class="story__head reveal">
-            <p class="kicker">Connor's story</p>
-            <h2>The boy who loved to give.</h2>
-          </div>
-          <div class="story__grid">
-            <figure class="story__media reveal">
-              <div class="frame-img">
-                <img
-                  src="assets/img/connor-memory.jpg"
-                  alt="Connor holding a framed photo of himself as a toddler"
-                  width="1179"
-                  height="1545"
-                />
-              </div>
-              <figcaption>keep smiling</figcaption>
-            </figure>
-            <div class="story__body reveal">
-              <p class="lead">
-                He cared about people. He loved giving. He loved helping. That
-                was Connor, all the way through.
-              </p>
-              <p>
-                After we lost him in August 2024, our community wrapped around
-                us. People covered funeral costs, brought food to the door, and
-                prayed us through the hardest days of our lives. His caring
-                spirit had reached further than any of us ever knew.
-              </p>
-              <p>
-                Forever 13 is how we say thank you. We give that same love back
-                to the next family who needs it, in his name.
-              </p>
-
-              <div class="story__quote">
-                <p class="big">Keep&nbsp;Smiling.</p>
-                <cite>Connor's words, and the way we choose to remember him</cite>
-              </div>
-              <p class="story__song">
-                In his memory, we keep his song close: <em>“Dancing in the Sky.”</em>
-              </p>
-
-              <div class="signoff">
-                <p>
-                  With all our love,<br />
-                  <span class="sig">Connor's family</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================= Promise ========================== -->
-      <section class="section promise">
-        <svg class="promise__wm" aria-hidden="true"><use href="#wings" /></svg>
-        <div class="container on-blue">
-          <div class="promise__head reveal">
-            <p class="kicker">The promise we made</p>
-            <h2>Turning pain into purpose, one family at a time.</h2>
+      <!-- ========================== Mission strip ======================= -->
+      <section class="section mission">
+        <div class="container mission__inner">
+          <p class="kicker" data-anim="up"><svg aria-hidden="true"><use href="#wings" /></svg> Our mission</p>
+          <p class="mission__statement" data-anim="mask">
+            Turning pain into purpose, <em>one family at a time.</em>
+          </p>
+          <div class="mission__row" data-anim="up" style="--d: 0.1s">
             <p>
-              When we needed help the most, our community gave it without being
-              asked. Forever 13 exists to pass that forward, so that no family
-              around us has to walk through tragedy alone.
+              When a local family is hit with the unexpected, we help carry the
+              weight, so no one has to face the hardest days alone.
+            </p>
+            <a class="btn" data-donate href="#give">
+              <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
+              Give today
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== What we do ========================= -->
+      <section class="section dowork" id="dowork">
+        <svg class="dowork__wm" aria-hidden="true"><use href="#wings" /></svg>
+        <div class="container on-blue">
+          <div class="dowork__head">
+            <p class="kicker" data-anim="up"><svg aria-hidden="true"><use href="#wings" /></svg> What we do</p>
+            <h2 data-anim="mask">Support when families need it most.</h2>
+            <p data-anim="up" style="--d: 0.08s">
+              When we lost Connor, our community covered funeral costs, brought
+              food to the door, and prayed us through the hardest days of our
+              lives. Forever 13 exists to pass that same support forward.
             </p>
           </div>
           <div class="ways">
-            <div class="way reveal">
+            <div class="way" data-anim="up" style="--d: 0.05s">
               <span class="way__num">01</span>
               <h3>Community Support</h3>
               <p>Showing up for families in their hardest moments, the way our community showed up for us.</p>
             </div>
-            <div class="way reveal">
+            <div class="way" data-anim="up" style="--d: 0.15s">
               <span class="way__num">02</span>
               <h3>Fundraising</h3>
               <p>Turning gifts and events into real, direct help for families facing sudden hardship.</p>
             </div>
-            <div class="way reveal">
+            <div class="way" data-anim="up" style="--d: 0.25s">
               <span class="way__num">03</span>
               <h3>Acts of Kindness</h3>
               <p>Carrying Connor's everyday generosity into the lives of people who need it most.</p>
+            </div>
+          </div>
+          <div class="dowork__cta" data-anim="up">
+            <p class="script">Every bit helps.</p>
+            <a class="btn btn--white btn--lg" data-donate href="#give">
+              <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
+              Donate to the cause
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================== Get involved ======================== -->
+      <section class="section involve" id="involve">
+        <div class="container">
+          <div class="involve__head">
+            <p class="kicker" data-anim="up"><svg aria-hidden="true"><use href="#wings" /></svg> Get involved</p>
+            <h2 data-anim="mask">More than one way to help.</h2>
+          </div>
+          <div class="involve__grid">
+            <article class="help" data-anim="up" style="--d: 0.05s">
+              <span class="help__icon"><svg aria-hidden="true"><use href="#i-heart" /></svg></span>
+              <h3>Donate</h3>
+              <p>The fastest way to help. Every dollar goes straight to a local family who needs it.</p>
+              <a class="btn" data-donate href="#give">
+                <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
+                Donate
+              </a>
+            </article>
+            <article class="help" data-anim="up" style="--d: 0.15s">
+              <span class="help__icon"><svg aria-hidden="true"><use href="#i-gift" /></svg></span>
+              <h3>Fundraise</h3>
+              <p>Host an event, start a collection, or dedicate a birthday. We will help you make it count.</p>
+              <a class="textlink" href="#give">Start a fundraiser</a>
+            </article>
+            <article class="help" data-anim="up" style="--d: 0.25s">
+              <span class="help__icon"><svg aria-hidden="true"><use href="#i-share" /></svg></span>
+              <h3>Spread the word</h3>
+              <p>Share Connor's story and our mission. The more people who know, the more families we reach.</p>
+              <a class="textlink" href="gallery.html">See our story</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Connor ========================== -->
+      <section class="section connor" id="connor">
+        <div class="container">
+          <div class="connor__head">
+            <p class="kicker" data-anim="up"><svg aria-hidden="true"><use href="#wings" /></svg> The heart behind it all</p>
+            <h2 data-anim="mask">Meet Connor.</h2>
+            <p class="sub" data-anim="up" style="--d: 0.08s">
+              Forever 13 exists because of one remarkable kid. This is the boy
+              whose kindness started everything.
+            </p>
+          </div>
+          <div class="connor__grid">
+            <div class="connor__media">
+              <figure class="photo-mat photo-mat--a" data-anim="photo">
+                <div class="frame-img">
+                  <img src="assets/img/connor-memory.jpg" alt="Connor holding a framed photo of himself as a toddler" width="1179" height="1545" />
+                </div>
+                <figcaption>keep smiling</figcaption>
+              </figure>
+              <figure class="photo-mat photo-mat--b" data-anim="photo" style="--d: 0.1s">
+                <div class="frame-img">
+                  <img src="assets/img/connor-smile.jpg" alt="Connor Taylor grinning in the car" width="1179" height="1557" />
+                </div>
+                <figcaption>always smiling</figcaption>
+              </figure>
+            </div>
+            <div class="connor__body">
+              <p class="lead" data-anim="up">
+                Connor Taylor had a heart far bigger than his 13 years. He cared
+                about people. He loved giving. He loved helping.
+              </p>
+              <p data-anim="up" style="--d: 0.05s">
+                He was one of the kindest, most humble, and well mannered
+                children anyone could ever meet, and he never expected a thing in
+                return.
+              </p>
+
+              <div class="memory-note" data-anim="up" style="--d: 0.1s">
+                <span class="label">Miss Jones.</span>
+                <p>
+                  Every day after the school bus, Connor crossed the street just
+                  to sit and talk with our neighbor. On holidays, he fixed her a
+                  plate of food and carried it over himself. That was simply who
+                  he was.
+                </p>
+              </div>
+
+              <p data-anim="up" style="--d: 0.05s">
+                After we lost him in August 2024, we learned his caring spirit
+                had reached further than any of us ever knew. Forever 13 is how
+                we say thank you, by giving that same love to the next family who
+                needs it.
+              </p>
+
+              <div class="connor__quote" data-anim="up">
+                <p class="big">Keep&nbsp;Smiling.</p>
+                <cite>Connor's words, and the way we choose to remember him</cite>
+              </div>
+              <p class="connor__song" data-anim="up">
+                In his memory, we keep his song close: <em>“Dancing in the Sky.”</em>
+              </p>
+
+              <div class="signoff" data-anim="up">
+                <p>With all our love,<br /><span class="sig">Connor's family</span></p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- ============================== Family ========================== -->
-      <section class="section" id="family">
+      <section class="section family" id="family">
         <div class="container family__grid">
-          <figure class="family__photo reveal">
+          <figure class="family__photo" data-anim="photo">
             <div class="frame-img">
-              <img
-                src="assets/img/family-event.jpg"
-                alt="The Forever 13 family together at an event, holding Connor's portrait"
-                width="1179"
-                height="1554"
-              />
+              <img src="assets/img/family-event.jpg" alt="The Forever 13 family together at an event, holding Connor's portrait" width="1179" height="1554" />
             </div>
             <figcaption>our family</figcaption>
           </figure>
-          <div class="family__intro reveal">
-            <p class="kicker">The family behind Forever 13</p>
-            <h2>Every one of us loved him.</h2>
-            <p>
+          <div class="family__intro">
+            <p class="kicker" data-anim="up"><svg aria-hidden="true"><use href="#wings" /></svg> The family behind Forever 13</p>
+            <h2 data-anim="mask">Every one of us loved him.</h2>
+            <p data-anim="up" style="--d: 0.08s">
               The foundation is run by Connor's own family, the people his
               kindness shaped, carrying his memory forward together.
             </p>
             <!-- NOTE: roster lists the VP as "Chelsea Carter" (heading) and
                  "Chelsea Williams" (bio). Confirm the correct surname before launch. -->
-            <div class="roster">
+            <div class="roster" data-anim="up" style="--d: 0.12s">
               <div class="roster__row"><span><b>Collin Walters</b><span class="who">Connor's cousin</span></span><span class="role">President</span></div>
               <div class="roster__row"><span><b>Chelsea Carter</b><span class="who">Connor's cousin</span></span><span class="role">Vice President</span></div>
               <div class="roster__row"><span><b>Becky Thurston</b><span class="who">Connor's aunt</span></span><span class="role">Treasurer</span></div>
@@ -285,19 +330,19 @@
 
       <!-- =============================== Give =========================== -->
       <section class="section give" id="give">
+        <svg class="give__wm" aria-hidden="true"><use href="#wings" /></svg>
         <div class="container give__grid">
-          <div class="reveal">
-            <p class="kicker">Give in Connor's memory</p>
-            <h2>Your gift becomes a hand reaching back.</h2>
-            <p class="give__copy">
-              Connor loved to give, and he never expected a thing in return. When
-              you donate, you carry that forward, helping a local family through
-              the kind of hardship ours once faced. Every dollar is handled with
-              care and goes straight to families in need.
+          <div>
+            <p class="kicker" data-anim="up"><svg aria-hidden="true"><use href="#wings" /></svg> Give in Connor's memory</p>
+            <h2 data-anim="mask">Your gift becomes a hand reaching back.</h2>
+            <p class="give__copy" data-anim="up" style="--d: 0.08s">
+              When you donate, you help a local family through the kind of
+              hardship ours once faced. Every dollar is handled with care and
+              goes straight to families in need, right here at home.
             </p>
-            <div class="give__actions">
+            <div class="give__actions" data-anim="up" style="--d: 0.12s">
               <a class="btn btn--white btn--lg" data-donate href="#give">
-                <svg aria-hidden="true"><use href="#i-heart" /></svg>
+                <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
                 Donate now
               </a>
               <a class="textlink" href="gallery.html">See where your gifts go</a>
@@ -307,7 +352,7 @@
               code at any Forever 13 event.
             </p>
           </div>
-          <div class="give__card reveal">
+          <div class="give__card" data-anim="pop">
             <div class="qr">
               <!-- Drop assets/img/donate-qr.png to replace this placeholder -->
               <div class="qr__ph">
@@ -325,13 +370,19 @@
     <!-- ============================== Footer ============================ -->
     <footer class="site-footer">
       <div class="container">
+        <div class="footer__top">
+          <p>Ready to help a family in Connor's name?</p>
+          <a class="btn btn--lg" data-donate href="#give">
+            <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
+            Donate now
+          </a>
+        </div>
         <div class="footer__grid">
           <div class="footer__brand">
             <img src="assets/img/logo.png" alt="Forever 13 Foundation" />
             <p>
-              A Mississippi nonprofit founded in memory of Connor Taylor,
-              supporting families through unexpected hardships. Turning pain into
-              purpose, one family at a time.
+              A Mississippi nonprofit that helps families through unexpected
+              hardships. Turning pain into purpose, one family at a time.
             </p>
             <span class="script">keep smiling.</span>
           </div>
@@ -339,7 +390,8 @@
             <h4>Explore</h4>
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#story">Connor's Story</a></li>
+              <li><a href="#dowork">What We Do</a></li>
+              <li><a href="#connor">Connor's Story</a></li>
               <li><a href="#family">The Family</a></li>
               <li><a href="gallery.html">Event Gallery</a></li>
               <li><a href="#give">Donate</a></li>
@@ -364,7 +416,7 @@
 
     <div class="donate-float" data-donate-float>
       <a class="btn" data-donate href="#give">
-        <svg aria-hidden="true"><use href="#i-heart" /></svg>
+        <svg class="heartbeat" aria-hidden="true"><use href="#i-heart" /></svg>
         Donate in Connor's memory
       </a>
     </div>

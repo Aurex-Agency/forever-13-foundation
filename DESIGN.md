@@ -2,91 +2,87 @@
 
 <!-- impeccable:design-schema 1 -->
 
-World name: **Keep Smiling.** (Replaces the earlier "First Light" world.)
+World name: **Keep Smiling** (warm editorial refinement).
 
 ## Direction contract
 
-**THESIS.** Celebrate Connor's smile — don't mourn in the dark. This build
-refuses two defaults: the muted navy/gold "tasteful memorial" of the first
-attempt (which ignored the real brand and felt generic), and the AI section-
-stack of identical eyebrow→title→body→card blocks. Instead it is **bright,
-sunlit, and photo-led**, in the foundation's actual brand: electric royal blue,
-chrome/silver, black, white — with Connor's real face leading and the real
-winged logo as the anchor.
+**THESIS.** A warm, hand-touched tribute that feels made by people who loved
+Connor, not generated. It keeps the real brand energy (electric royal blue,
+wings) but grounds it on warm ivory paper with grain, characterful type, and
+human marginalia (a handwritten family note, a scrolling "keep smiling", the
+Miss Jones anecdote pulled out like a memory). It refuses cold flat-white SaaS
+minimalism and the cream-plus-serif memorial cliché alike.
 
-**OWN-WORLD.** A light, airy base (white + cool paper) for lift and honesty;
-**electric royal blue (`#0a5cf5`)** as a committed brand color that owns whole
-bands (the "promise" section and the give section are drenched blue); **chrome/
-silver hairlines and rules** echo the metal outline of the logo; black ink for
-type. Real photography is the material — big, warmly cropped, sometimes bleeding
-across section edges. The **angel wings** from the logo recur as a quiet
-watermark. Type is Archivo (wide, confident display) + Hanken Grotesk (humanist
-body) + Caveat (a handwritten accent for "Keep Smiling" and personal notes,
-echoing the logo's script).
+**OWN-WORLD.** Warm ivory paper (`#f6f1e8`) with a faint grain overlay for
+tactility; warm espresso ink for text; **electric royal blue (`#0a5cf5`)** as
+the brand's energy, used as the accent and as two drenched brand bands (the
+promise, the give). Photography is warm and large, in soft off-white mats with
+real (offset) shadow. Handwriting (Caveat) carries the human voice. The wings
+recur as a quiet watermark and the "13" as a recurring mark. Type is Bricolage
+Grotesque (warm, characterful display) over Hanken Grotesk (humane body), with
+Caveat for personal notes.
 
-**STORY.** A bright hero with Connor's sunlit face, "Forever 13," and "keep
-smiling" in his own kind of script. The visitor meets who he was, reads his
-story beside the photo of him holding his own baby portrait, understands the
-family's promise (the bold blue band), meets the real family behind it (the
-event photo + roster), and is asked to give — warmly, confidently.
+**STORY.** Land in warm light with Connor's smile and "keep smiling" in his
+family's hand. A marquee carries his memory across the page. Meet who he was
+(the Miss Jones story), read his story beside the photo of him holding his baby
+portrait, feel the family's promise on the bold blue band, meet the real family,
+and give, closed by a handwritten sign-off from the family.
 
-**FIRST VIEWPORT.** Asymmetric editorial: Connor's beach portrait large to one
-side; on the other, "Forever 13" set big in Archivo, "keep smiling." in Caveat,
-one sentence of purpose, and a solid electric-blue Donate. The real logo sits in
-the header. No dark gradients, no placeholder boxes.
+**FIRST VIEWPORT.** Warm ivory, a faint wings watermark, "Forever 13" set large
+in Bricolage with the blue "13", "keep smiling" in script beneath, one warm
+line, a small "A Mississippi nonprofit, est. 2024" detail, and a solid blue
+Donate beside "Meet Connor". Connor's beach portrait sits in a soft mat, gently
+revealed. Real logo in the header.
 
-**FORM.** Photo-led editorial tribute, brief-pinned (the client demanded a full
-revamp around the real assets), so no concept roll. Rhythm deliberately varies
-section to section — no repeated block template.
+**FORM.** Warm editorial tribute, brief-pinned. Rhythm varies section to
+section. One authored focal motion (hero reveal + word rise); everything else is
+quiet supporting motion.
 
 ## Color
 
-Committed electric blue on a light ground. Chosen for Connor's own sunlit,
-joyful photos and the vivid real logo; a dark or muted world would contradict
-both. Picked for a phone in daylight, shared at events and on social.
+Committed electric blue on warm ivory. Chosen for Connor's sunlit photos and the
+vivid logo, warmed so the page feels handmade, not clinical. Light, warm, for a
+phone held in daylight.
 
-- `--blue: #0a5cf5` (primary brand) · `--blue-bright: #1f86ff` · `--blue-deep:
-  #063bb0` (hover/gradient) · `--blue-ink: #06205f` (text on blue tints).
-- `--blue-050: #eef4ff` · `--blue-100: #dde9ff` — soft tint fields.
-- `--ink: #0b1220` (near-black, faintly blue) · `--ink-2: #3b4a63` (secondary text).
-- `--paper: #ffffff` · `--paper-2: #f5f8fd` (cool, never cream).
-- `--silver: #c7d0dc` · `--chrome-*`: a light→dark silver gradient used only on
-  thin rules/dividers to echo the logo's metallic outline (never as filler).
+- `--paper: #f6f1e8` · `--paper-2: #efe7d7` (warm alt) · `--card: #fffdf7`.
+- `--ink: #22201b` (warm near-black) · `--ink-2: #5b5347` · `--ink-3: #8a8172`.
+- `--blue: #0a5cf5` · `--blue-deep: #063bb0` · `--blue-bright: #2f86ff` ·
+  `--blue-050: #ecf2ff`.
+- `--rule: #e3dccb` (warm hairline) · `--silver` chrome only on logo-echo details.
+- On blue bands: white text, tints of white for secondary.
 
-Contrast: ink on paper and white on `--blue` both clear AA. Secondary text on
-paper uses `--ink` tints, never flat gray.
+Contrast: ink on paper and white on blue both clear AA.
 
 ## Type
 
-- Display: **Archivo** (700/800/900). Big, wide, confident headlines and
-  "Forever 13". Tracking negative at large sizes. Not a serif; deliberately
-  breaks from the memorial-serif cliché.
-- Body/UI: **Hanken Grotesk** (400/500/600/700). Copy, nav, buttons, labels.
-- Accent: **Caveat** (600/700), handwritten. Only for short human moments —
-  "keep smiling", a signed note — echoing the logo's script. Never body text.
-- Fluid scale via `clamp()`. Hero display up to ~clamp(3rem, 8vw, 6rem) (≤6rem
-  floor). Body 1.0625–1.1875rem, measure 60–70ch. More space above headings than
-  below.
+- Display: **Bricolage Grotesque** (600/700/800). Headlines and "Forever 13".
+  Chosen for warmth and character over the cold neutral grotesque it replaces,
+  and over the serif-memorial cliché.
+- Body/UI: **Hanken Grotesk** (400/500/600/700).
+- Script: **Caveat** (600/700). Handwritten human moments only (the family's
+  note, "keep smiling", captions). Never body text.
+- Fluid `clamp()`. Hero display up to ~6rem. Body 1.06–1.19rem, measure 60–68ch.
+  More space above headings than below.
 
-## Imagery & motif
+## Texture, motif, imagery
 
-Real, optimized photos ship in `assets/img/` (see its README for sources):
-`connor-hero.jpg` (beach portrait, hero), `connor-smile.jpg` (car, joyful),
-`connor-memory.jpg` (holding his baby portrait, story), `family-event.jpg`
-(the family in Forever 13 shirts, community/team), plus `logo.png`. The wings
-recur as a low-opacity watermark behind key headings. Any future photos slot in
-by the manifest; gallery uses real event photos.
+Real optimized photos in `assets/img/` (see its README): hero (beach), who-he-
+was (car), story (holding his baby portrait), family (event group), logo. A
+low-opacity SVG grain overlays the paper for warmth. Wings watermark behind key
+headings; the "13" as a recurring mark. A slow "keep smiling · forever 13"
+marquee adds character and motion.
 
-## Motion & depth
+## Motion (thesis)
 
-One calm language: photos and headings rise gently into place on scroll
-(translateY + fade, exponential ease-out, staggered), collapsing to static under
-`prefers-reduced-motion`. Shadows carry real offset + soft blur. Buttons and
-links get purposeful hover/focus states; the gallery lightbox is keyboard- and
-Escape-accessible.
+**Focal moment:** the hero, on load, reveals Connor's photo with a soft
+clip-path/opacity wipe while the headline words rise once, staggered, from
+warm paper. **Supporting:** gentle scroll-reveal (opacity + small rise, capped
+stagger), a continuous marquee, and a light parallax drift on the hero
+watermark. Easing `cubic-bezier(0.16,1,0.3,1)`; content visible without JS.
+Everything collapses to static under `prefers-reduced-motion`.
 
-## Donate config
+## States & config
 
-The donate URL lives in ONE value (`DONATE_URL` in `assets/js/main.js`) read by
-every Donate control + the QR slot. Provider swap or move to Zeffy = one line.
-Button is present; wire it when the handle is ready.
+Buttons/links have hover, focus-visible, active. Gallery lightbox is keyboard +
+Escape accessible. Donate URL lives in ONE value (`DONATE_URL` in
+`assets/js/main.js`) read by every control. No em-dashes anywhere in copy.

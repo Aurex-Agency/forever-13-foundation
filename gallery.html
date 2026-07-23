@@ -3,24 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Gallery — Forever 13 Foundation</title>
+    <title>Event Gallery | Forever 13 Foundation</title>
     <meta
       name="description"
-      content="Moments from Forever 13 Foundation events — the community coming together in memory of Connor Taylor."
+      content="Moments from Forever 13 Foundation events, the community coming together in memory of Connor Taylor."
     />
-    <meta name="theme-color" content="#0a5cf5" />
+    <meta name="theme-color" content="#f6f1e8" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Event Gallery — Forever 13 Foundation" />
+    <meta property="og:title" content="Event Gallery | Forever 13 Foundation" />
     <meta property="og:description" content="Moments from our events, in memory of Connor Taylor." />
     <meta property="og:image" content="assets/img/family-event.jpg" />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a5cf5'/%3E%3Ctext x='16' y='23' font-family='Archivo,Arial,sans-serif' font-weight='900' font-size='16' fill='white' text-anchor='middle'%3E13%3C/text%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a5cf5'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-weight='900' font-size='16' fill='white' text-anchor='middle'%3E13%3C/text%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Caveat:wght@600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -45,7 +45,7 @@
 
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="brand" href="index.html" aria-label="Forever 13 Foundation — home">
+        <a class="brand" href="index.html" aria-label="Forever 13 Foundation home">
           <img src="assets/img/logo.png" alt="Forever 13 Foundation, in memory of Connor Taylor" />
         </a>
         <nav class="nav" data-nav aria-label="Primary">
@@ -67,17 +67,24 @@
 
     <main id="main">
       <section class="gallery-hero">
+        <svg class="hero__watermark" aria-hidden="true"><use href="#wings" /></svg>
         <div class="container">
-          <svg class="hero__watermark" aria-hidden="true"><use href="#wings" /></svg>
           <p class="kicker" style="justify-content: center; display: inline-flex">Event Gallery</p>
-          <h1>Moments that carry his light.</h1>
+          <h1 style="margin-top: 1rem">Moments that carry his light.</h1>
           <p>
             Every gathering, fundraiser, and act of kindness is Connor's memory
-            in motion — a community showing up for one another.
+            in motion, a community showing up for one another.
           </p>
         </div>
       </section>
       <span data-hero-end aria-hidden="true"></span>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Keep Smiling</span><span class="alt">Forever 13</span><span>In Memory of Connor Taylor</span><span class="alt">Keep Smiling</span>
+          <span>Keep Smiling</span><span class="alt">Forever 13</span><span>In Memory of Connor Taylor</span><span class="alt">Keep Smiling</span>
+        </div>
+      </div>
 
       <section class="section">
         <div class="container">
@@ -90,7 +97,7 @@
                </button>
 
                (Phase 2 replaces this with the self-serve phone upload flow from
-               PLAN.md so the family never edits HTML.) -->
+               PLAN.md, so the family never edits HTML.) -->
           <div class="gallery reveal" data-gallery>
             <button
               class="gallery__item"
@@ -114,7 +121,7 @@
 
           <p class="gallery__note">
             More photos are on their way. Soon the family will add new pictures
-            straight from a phone — and they'll appear here automatically.
+            straight from a phone, and they will appear here automatically.
           </p>
         </div>
       </section>
@@ -138,10 +145,11 @@
           <div class="footer__brand">
             <img src="assets/img/logo.png" alt="Forever 13 Foundation" />
             <p>
-              A nonprofit founded in memory of Connor Taylor, supporting families
-              through unexpected hardships. Turning pain into purpose, one family
-              at a time.
+              A Mississippi nonprofit founded in memory of Connor Taylor,
+              supporting families through unexpected hardships. Turning pain into
+              purpose, one family at a time.
             </p>
+            <span class="script">keep smiling.</span>
           </div>
           <div class="footer__col">
             <h4>Explore</h4>
@@ -165,7 +173,7 @@
         </div>
         <div class="footer__bottom">
           <span>© <span data-year>2026</span> Forever 13 Foundation. All rights reserved.</span>
-          <span class="script">keep smiling.</span>
+          <span>Made with love in Mississippi.</span>
         </div>
       </div>
     </footer>

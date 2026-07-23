@@ -1,11 +1,11 @@
-/* Forever 13 Foundation — behavior
+/* Forever 13 Foundation behavior
    Progressive enhancement: the site is fully readable with JS disabled.
    ------------------------------------------------------------------------ */
 (function () {
   "use strict";
 
   /* --------------------------------------------------------------------
-     Donate configuration — SINGLE SOURCE OF TRUTH.
+     Donate configuration: SINGLE SOURCE OF TRUTH.
      When the foundation's real handle is ready, set the values below.
      Every Donate button on the site reads from here, so wiring it up is
      a one-line change. To move to Zeffy later, just swap DONATE_URL.
@@ -27,7 +27,7 @@
       btn.setAttribute("href", "#give");
       btn.setAttribute(
         "title",
-        "Donation link coming soon — the button will be wired up shortly."
+        "Donation link coming soon. The button will be wired up shortly."
       );
     }
   });
@@ -153,6 +153,24 @@
       else if (e.key === "ArrowLeft") show(current - 1);
       else if (e.key === "ArrowRight") show(current + 1);
     });
+  }
+
+  /* ------------------------------------------- Hero watermark parallax */
+  var parallax = document.querySelectorAll("[data-parallax]");
+  if (parallax.length && !prefersReduced) {
+    var ticking = false;
+    var onScroll = function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        var y = window.scrollY || 0;
+        parallax.forEach(function (el) {
+          el.style.transform = "translate3d(0," + y * 0.12 + "px,0)";
+        });
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
   }
 
   /* ------------------------------------------------------- Current year */

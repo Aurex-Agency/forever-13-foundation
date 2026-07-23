@@ -22,8 +22,9 @@
       btn.removeAttribute("aria-disabled");
       btn.removeAttribute("title");
     } else {
-      // Not wired yet: keep it visible and reassuring, but inert.
-      btn.setAttribute("href", "#donate");
+      // Not wired yet: keep it visible and reassuring, but send to the give
+      // section so the QR/instructions are in view.
+      btn.setAttribute("href", "#give");
       btn.setAttribute(
         "title",
         "Donation link coming soon — the button will be wired up shortly."

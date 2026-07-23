@@ -13,13 +13,15 @@ stays within reach on every screen; Connor's story earns the gift.
 
 ## Design
 
-Design world **"First Light"** — a warm, hopeful memorial (deep dawn blue,
-silver light, one gold "hope" accent), *not* a racing look. Direction, tokens,
-and rationale are documented in [`DESIGN.md`](DESIGN.md); product truth in
-[`PRODUCT.md`](PRODUCT.md); the full strategy in [`PLAN.md`](PLAN.md).
+Design world **"Keep Smiling"** — bright, sunlit, and photo-led, in the
+foundation's real brand (electric royal blue + chrome/silver from the logo),
+leading with Connor's own smiling photos. Direction, tokens, and rationale are
+in [`DESIGN.md`](DESIGN.md); product truth in [`PRODUCT.md`](PRODUCT.md); the
+full strategy in [`PLAN.md`](PLAN.md).
 
 Built as a plain static site (HTML + CSS + vanilla JS) — no build step, hosts
-anywhere (Netlify, Vercel, GitHub Pages, etc.).
+anywhere (Netlify, Vercel, GitHub Pages, etc.). Real logo and photos are
+embedded; see [`assets/img/README.md`](assets/img/README.md).
 
 ## Running locally
 
@@ -36,10 +38,9 @@ Everything works today with tasteful placeholders. To launch:
 1. **Donation link** — set `DONATE_URL` (one value) in `assets/js/main.js`.
    Every Donate button and the QR wire off that. Swapping to Zeffy later is the
    same one-line change.
-2. **Images** — drop real files into `assets/img/` using the exact filenames in
-   [`assets/img/README.md`](assets/img/README.md) (logo, Connor's photos, team
-   headshots, gallery, donation QR, social share card). Each placeholder in the
-   HTML is labeled with the filename it expects.
+2. **Donation QR + more gallery photos** — the logo and Connor's photos are
+   already embedded; still to add are `donate-qr.png` and event photos (see
+   [`assets/img/README.md`](assets/img/README.md)).
 3. **Contact & socials** — replace the clearly-marked *sample* email/social
    links in the footer of both pages.
 4. **Confirm** — the VP's surname (`Chelsea Carter` vs `Williams` — flagged in

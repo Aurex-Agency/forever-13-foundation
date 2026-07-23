@@ -2,103 +2,91 @@
 
 <!-- impeccable:design-schema 1 -->
 
-World name: **First Light.**
+World name: **Keep Smiling.** (Replaces the earlier "First Light" world.)
 
 ## Direction contract
 
-**THESIS.** A memorial that looks *up toward light*, not down into grief. The
-surface refuses both category defaults: the racing/motorsports look the family
-explicitly rejected, and the AI "memorial" default of warm cream ground + italic
-serif + terracotta. Instead it commits to the brand's own sky: deep dawn blue,
-silver light, one warm gold glow for hope. Connor is "dancing in the sky."
+**THESIS.** Celebrate Connor's smile — don't mourn in the dark. This build
+refuses two defaults: the muted navy/gold "tasteful memorial" of the first
+attempt (which ignored the real brand and felt generic), and the AI section-
+stack of identical eyebrow→title→body→card blocks. Instead it is **bright,
+sunlit, and photo-led**, in the foundation's actual brand: electric royal blue,
+chrome/silver, black, white — with Connor's real face leading and the real
+winged logo as the anchor.
 
-**OWN-WORLD.** Deep dawn-blue fields own whole regions (hero and donate close
-are near-drenched navy); a cool porcelain light carries the reading passages
-(mission, story, team) — the "ground" where the community lives. Silver is the
-light on the water; a single warm luminous gold is reserved for the one sacred
-action (Donate) and the "13" mark — never spread around. Type is Spectral
-(literary serif, for Connor's name, titles, and quotes) over Hanken Grotesk
-(humanist sans, for copy and controls). A hand-built wings+13 monogram appears
-quietly: nav, a large low-opacity hero watermark, a slim section divider, footer.
+**OWN-WORLD.** A light, airy base (white + cool paper) for lift and honesty;
+**electric royal blue (`#0a5cf5`)** as a committed brand color that owns whole
+bands (the "promise" section and the give section are drenched blue); **chrome/
+silver hairlines and rules** echo the metal outline of the logo; black ink for
+type. Real photography is the material — big, warmly cropped, sometimes bleeding
+across section edges. The **angel wings** from the logo recur as a quiet
+watermark. Type is Archivo (wide, confident display) + Hanken Grotesk (humanist
+body) + Caveat (a handwritten accent for "Keep Smiling" and personal notes,
+echoing the logo's script).
 
-**STORY.** A visitor lands in a calm dawn sky with Connor's face, his name, and
-"Forever 13," one line on why the foundation exists, and a glowing Donate. They
-descend to the ground to read the mission and meet Connor in the family's own
-words ("Keep Smiling," "Dancing in the Sky"), then the real people behind it,
-then rise back into the sky for a larger, warmer ask with a QR code.
+**STORY.** A bright hero with Connor's sunlit face, "Forever 13," and "keep
+smiling" in his own kind of script. The visitor meets who he was, reads his
+story beside the photo of him holding his own baby portrait, understands the
+family's promise (the bold blue band), meets the real family behind it (the
+event photo + roster), and is asked to give — warmly, confidently.
 
-**FIRST VIEWPORT.** Full-bleed dawn-sky gradient with a slow drifting light and
-a faint wings+13 watermark. Left/centered: memorial eyebrow "In Memory of Connor
-Taylor," then "Forever 13" in large Spectral, a single sentence, and the gold
-Donate button beside a quiet Gallery link. Connor's portrait sits in a
-soft-edged frame to the side (placeholder until the real photo drops in). Sticky
-header above it all: monogram + wordmark, Home · Gallery, gold Donate.
+**FIRST VIEWPORT.** Asymmetric editorial: Connor's beach portrait large to one
+side; on the other, "Forever 13" set big in Archivo, "keep smiling." in Caveat,
+one sentence of purpose, and a solid electric-blue Donate. The real logo sits in
+the header. No dark gradients, no placeholder boxes.
 
-**FORM.** Editorial memorial long-page, brief-pinned (the client approved this
-direction in PLAN.md), so no concept-seed roll was run. Composition arc:
-Sky → Ground → Sky → deepest-blue footer.
+**FORM.** Photo-led editorial tribute, brief-pinned (the client demanded a full
+revamp around the real assets), so no concept roll. Rhythm deliberately varies
+section to section — no repeated block template.
 
 ## Color
 
-Committed-to-Drenched blue with a single warm accent. Picked for a phone held
-anywhere, day or night, by people who loved a child — light emerging from blue
-reads as hope; a dark-only or cream-only world would read as either grief or
-greeting-card.
+Committed electric blue on a light ground. Chosen for Connor's own sunlit,
+joyful photos and the vivid real logo; a dark or muted world would contradict
+both. Picked for a phone in daylight, shared at events and on social.
 
-- `--sky-900: #081228` · `--sky-800: #0b1a38` · `--sky-700: #12244c` — deep
-  dawn fields and footer.
-- `--sky-horizon: #21407e` — the lighter band where light breaks.
-- `--silver-100: #eef2fb` · `--silver-300: #c6d2ea` · `--silver-500: #93a4c8`
-  — light and secondary text on sky (tinted from the hue, never neutral gray).
-- `--porcelain: #f4f7fc` · `--porcelain-2: #eaf0f9` — cool reading ground (NOT
-  cream).
-- `--ink-900: #0e1830` · `--ink-600: #33456b` — text on porcelain.
-- `--gold-400: #f0c674` · `--gold-500: #e6b45a` · `--gold-600: #cf9a3e` — the
-  single sacred/hope accent: Donate CTA, the "13", small light glints. Contrast
-  gold text only on dark; on light use `--gold-600` or darker.
+- `--blue: #0a5cf5` (primary brand) · `--blue-bright: #1f86ff` · `--blue-deep:
+  #063bb0` (hover/gradient) · `--blue-ink: #06205f` (text on blue tints).
+- `--blue-050: #eef4ff` · `--blue-100: #dde9ff` — soft tint fields.
+- `--ink: #0b1220` (near-black, faintly blue) · `--ink-2: #3b4a63` (secondary text).
+- `--paper: #ffffff` · `--paper-2: #f5f8fd` (cool, never cream).
+- `--silver: #c7d0dc` · `--chrome-*`: a light→dark silver gradient used only on
+  thin rules/dividers to echo the logo's metallic outline (never as filler).
 
-Contrast: silver-100 on sky-800 and ink-900 on porcelain both clear AA. Gold is
-a surface/mark color, not body text on light.
+Contrast: ink on paper and white on `--blue` both clear AA. Secondary text on
+paper uses `--ink` tints, never flat gray.
 
 ## Type
 
-- Display: **Spectral** (300/400/500/600, plus 400 italic for quotes). Connor's
-  name, "Forever 13," section titles, pull quotes. Chosen over the Fraunces/
-  Playfair default to avoid the memorial cliché and match a plainspoken family
-  voice; screen-native with gentle warmth.
-- Text/UI: **Hanken Grotesk** (400/500/600/700). Body, nav, buttons, labels.
-- Fluid scale via `clamp()`. Hero display `clamp(2.75rem, 8vw, 5rem)` (≤6rem
-  floor). Body 1.0625–1.1875rem, measure 62–72ch. Tracking floor -0.04em; body
-  0; display slightly negative. More space above headings than below.
+- Display: **Archivo** (700/800/900). Big, wide, confident headlines and
+  "Forever 13". Tracking negative at large sizes. Not a serif; deliberately
+  breaks from the memorial-serif cliché.
+- Body/UI: **Hanken Grotesk** (400/500/600/700). Copy, nav, buttons, labels.
+- Accent: **Caveat** (600/700), handwritten. Only for short human moments —
+  "keep smiling", a signed note — echoing the logo's script. Never body text.
+- Fluid scale via `clamp()`. Hero display up to ~clamp(3rem, 8vw, 6rem) (≤6rem
+  floor). Body 1.0625–1.1875rem, measure 60–70ch. More space above headings than
+  below.
 
-## Motif & imagery
+## Imagery & motif
 
-- `wings+13` monogram is inline SVG (silver stroke), scalable, one source of
-  truth. Large hero watermark at ~6–10% opacity; small in nav/divider/footer.
-- Authored atmosphere only (layered CSS sky + slow light drift + faint stars) —
-  not a lazy single gradient, and never generic glass/gradient chrome as filler.
-- Real photos of Connor/events go in labeled slots; until then, soft porcelain
-  placeholder frames carry a small monogram and a caption of what belongs there.
-  Team uses initials-monogram tiles (headshots deferred by client).
+Real, optimized photos ship in `assets/img/` (see its README for sources):
+`connor-hero.jpg` (beach portrait, hero), `connor-smile.jpg` (car, joyful),
+`connor-memory.jpg` (holding his baby portrait, story), `family-event.jpg`
+(the family in Forever 13 shirts, community/team), plus `logo.png`. The wings
+recur as a low-opacity watermark behind key headings. Any future photos slot in
+by the manifest; gallery uses real event photos.
 
-## Motion
+## Motion & depth
 
-One orchestrated language: content is visible by default; on scroll it *rises
-into light* (translateY + fade, exponential ease-out, staggered per section, not
-an identical entrance everywhere). Hero light drifts slowly. Everything inside
-`@media (prefers-reduced-motion: reduce)` collapses to static. No scattered
-hover novelties; buttons and links get calm, purposeful state changes.
-
-## Depth & states
-
-Shadows carry real offset + soft blur (no zero-offset halos). Gold Donate button
-has hover, focus-visible, and active states and a genuine drop shadow. Gallery
-tiles have hover, focus, and an accessible lightbox with keyboard + Escape.
-Provide empty/placeholder states for missing photos.
+One calm language: photos and headings rise gently into place on scroll
+(translateY + fade, exponential ease-out, staggered), collapsing to static under
+`prefers-reduced-motion`. Shadows carry real offset + soft blur. Buttons and
+links get purposeful hover/focus states; the gallery lightbox is keyboard- and
+Escape-accessible.
 
 ## Donate config
 
-The donate URL and cashtag/handle live in ONE place (a single JS/config value +
-one QR image slot) used by every Donate control. Provider swap or move to Zeffy
-= change one value and one QR. Button is present but intentionally unwired
-(placeholder href) for this build.
+The donate URL lives in ONE value (`DONATE_URL` in `assets/js/main.js`) read by
+every Donate control + the QR slot. Provider swap or move to Zeffy = one line.
+Button is present; wire it when the handle is ready.

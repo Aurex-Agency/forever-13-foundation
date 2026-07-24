@@ -13,6 +13,8 @@ Originals are kept in `source/` for re-editing.
 | `connor-memory.jpg` | Connor's story | `Pictures.jpeg` (holding his baby portrait) |
 | `family-event.jpg` | The Family + Gallery | `b5cad47e…jpg` (event group photo) |
 | `mission-smile.jpg` | Mission polaroid | square crop of `IMG_0833.jpeg` |
+| `event-balloons.jpg` | What We Do pillar | crop of the event group photo |
+| `favicon.png` + `apple-touch-icon.png` | Browser tab / home screen | the "13" cut from the official logo |
 | `community.jpg` | What We Do strip | wide crop of the event group photo |
 | `giving.jpg` | What We Do strip | crop of `Pictures.jpeg` (Connor + baby portrait) |
 
@@ -23,7 +25,6 @@ Originals are kept in `source/` for re-editing.
 | `donate-qr.png` | Give section | The CashApp/Venmo QR. Uncomment the `<img>` in `index.html`'s `.qr`. |
 | `gallery-02.jpg` … | Gallery | Event photos. Follow the commented pattern in `gallery.html`. Phase 2 makes this a self-serve phone upload (see `PLAN.md`). |
 | `og-image.jpg` | Social share card | 1200×630. Optional, currently the hero photo is used. |
-| `favicon.png` | Browser tab | Optional, an inline "13" favicon ships by default. |
 
 ## Regenerating optimized images
 

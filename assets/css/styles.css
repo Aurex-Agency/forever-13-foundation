@@ -48,7 +48,7 @@
   --photo: 14px 20px 44px -24px rgba(34, 26, 16, 0.5);
 
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
-  --header-h: 4.4rem;
+  --header-h: 4.8rem;
 }
 
 /* ------------------------------------------------------------------- Reset */
@@ -401,7 +401,7 @@ main,
   text-decoration: none;
 }
 .brand img {
-  height: 2.5rem;
+  height: 3.1rem;
   width: auto;
 }
 .nav {
@@ -619,7 +619,7 @@ main,
   position: relative;
   z-index: 1;
   margin-top: clamp(var(--space-5), 4vw, var(--space-6));
-  margin-bottom: clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(1.25rem, 2.5vw, 1.75rem);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   background: var(--card);
@@ -715,10 +715,11 @@ main,
 }
 .mission__statement {
   font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(1.8rem, 1.1rem + 2.8vw, 3.1rem);
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 1.05rem + 1.3vw, 1.9rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  max-width: 34rem;
 }
 .mission__statement em {
   font-style: normal;
@@ -817,7 +818,7 @@ main,
 .dowork__intro {
   max-width: 44rem;
   color: rgba(255, 255, 255, 0.92);
-  font-size: 1.12rem;
+  font-size: 1.05rem;
   margin-top: calc(-1 * var(--space-3));
   margin-bottom: var(--space-5);
 }
@@ -871,7 +872,7 @@ main,
 }
 .pillar p {
   color: var(--ink-2);
-  font-size: 0.96rem;
+  font-size: 1rem;
   line-height: 1.55;
 }
 .dowork__cta {
@@ -931,7 +932,7 @@ main,
 }
 .help p {
   color: var(--ink-2);
-  font-size: 0.97rem;
+  font-size: 1rem;
   flex: 1;
 }
 .help .btn,
@@ -992,7 +993,7 @@ main,
 }
 .connor__body p {
   color: var(--ink-2);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .connor__body .lead {
   font-family: var(--font-display);
@@ -1022,6 +1023,7 @@ main,
 .memory-note p {
   color: var(--ink-2);
   font-size: 1rem;
+  line-height: 1.6;
 }
 .connor__quote {
   margin: var(--space-5) 0 0;
@@ -1200,7 +1202,7 @@ main,
 .qa p {
   padding: 0 1.2rem 1.1rem;
   color: var(--ink-2);
-  font-size: 0.98rem;
+  font-size: 1rem;
 }
 
 /* ------------------------------------------------------------------ Give */
@@ -1240,14 +1242,13 @@ main,
   align-items: center;
 }
 .give h2 {
-  font-size: clamp(2.1rem, 1.3rem + 2.8vw, 3.5rem);
   color: #fff;
 }
 .give__copy {
   margin-top: var(--space-4);
   color: rgba(255, 255, 255, 0.9);
   max-width: 34rem;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 .give__actions {
   margin-top: var(--space-5);
@@ -1353,7 +1354,7 @@ main,
   gap: var(--space-5);
 }
 .footer__brand img {
-  height: 2.9rem;
+  height: 3.3rem;
   width: auto;
   margin-bottom: var(--space-3);
   background: var(--paper);

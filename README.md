@@ -41,7 +41,7 @@ Everything works today with tasteful placeholders. To launch:
 2. **Photo uploads** — set `CLOUDINARY_CLOUD_NAME` and
    `CLOUDINARY_UPLOAD_PRESET` in `assets/js/config.js` (from a free Cloudinary
    account with an unsigned upload preset and resource lists enabled). The
-   family then adds photos from a phone at `add-photos.html` (hidden page,
+   family then adds photos from a phone at `/add-photos` (hidden page,
    passcode in the same config file) and they appear in the gallery
    automatically.
 3. **Donation QR** — the logo and Connor's photos are

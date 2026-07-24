@@ -72,6 +72,14 @@ low-opacity SVG grain overlays the paper for warmth. Wings watermark behind key
 headings; the "13" as a recurring mark. A slow "keep smiling · forever 13"
 marquee adds character and motion.
 
+## Clouds & density
+
+Soft drifting cloud shapes (inline SVG, white / blue-tint on paper, ghost-white
+on blue bands) float through every section for a homey, "dancing in the sky"
+atmosphere. Sections are dense: tighter padding, fact chips (Family run, Est.
+2024, Mississippi), taped polaroids, a photo strip inside What We Do, and a
+handwritten note card. Busy but warm, never empty.
+
 ## Motion (thesis)
 
 **Focal moment:** the hero, on load, reveals Connor's photo with a soft

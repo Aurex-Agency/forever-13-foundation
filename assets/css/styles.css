@@ -1731,6 +1731,9 @@ main,
   .nav__toggle {
     display: inline-flex;
   }
+  .site-header {
+    background: color-mix(in srgb, var(--paper) 96%, transparent);
+  }
   .nav.is-open .nav__links {
     display: flex;
     flex-direction: column;
@@ -1739,15 +1742,27 @@ main,
     top: var(--header-h);
     left: 0;
     right: 0;
-    background: color-mix(in srgb, var(--paper) 97%, transparent);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-    border-bottom: 2px solid var(--ink);
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule-strong);
+    box-shadow: 0 22px 34px -20px rgba(32, 25, 16, 0.4);
     padding: var(--space-2) clamp(1.25rem, 5vw, 2.75rem) var(--space-3);
   }
   .nav.is-open .nav__links a {
-    padding: 0.9rem 0;
+    display: block;
+    width: 100%;
+    padding: 0.95rem 0;
     border-bottom: 1px solid var(--rule);
+    font-size: 1.05rem;
+  }
+  .nav.is-open .nav__links li:last-child a {
+    border-bottom: 0;
+  }
+  /* the desktop hover-underline reads as stray lines in the stacked menu */
+  .nav.is-open .nav__links a::after {
+    display: none;
+  }
+  .nav.is-open .nav__links a[aria-current="page"] {
+    color: var(--blue);
   }
   .donate-float {
     display: flex;

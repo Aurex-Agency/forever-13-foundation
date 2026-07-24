@@ -1763,7 +1763,15 @@ main,
   }
   .roster__row {
     flex-direction: column;
-    gap: 0.1rem;
+    align-items: flex-start;
+    gap: 0.35rem;
+    position: relative;
+    padding-right: 2.8rem;
+  }
+  .roster__row::after {
+    position: absolute;
+    right: 1.1rem;
+    top: 0.95rem;
   }
   .roster__row .role {
     text-align: left;

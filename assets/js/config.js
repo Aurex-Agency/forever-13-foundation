@@ -4,7 +4,7 @@
    ========================================================================= */
 window.F13 = {
   /* Donation link. Every Donate button on the site points here once set.
-     Example: "https://cash.app/$Forever13" or a Venmo/Zeffy link. */
+     Example: "https://cash.app/$Forever13" (or a Zeffy link later). */
   DONATE_URL: "",
 
   /* Cloudinary photo uploads (see assets/img/README.md and PLAN.md).

@@ -125,14 +125,14 @@ The promise: **the family never touches the website or waits on us.**
 
 ## 7. Donations & compliance
 
-Family is starting with **CashApp or Venmo**. Both plug in as a **button + printable QR code**.
+Family is taking donations through **CashApp only**. It plugs in as a **button + printable QR code**.
 
-| | CashApp | Venmo |
-| --- | --- | --- |
-| Link | cash.app/$Cashtag | venmo.com/u/Username |
-| Business fee | 2.75% / payment | 1.9% + $0.10 / payment |
-| QR code | Yes | Yes |
-| Tax receipts | No | No |
+| | CashApp |
+| --- | --- |
+| Link | cash.app/$Cashtag |
+| Business fee | 2.75% / payment |
+| QR code | Yes |
+| Tax receipts | No |
 
 **Guidance to pass along (as considerations, not legal advice):**
 
@@ -157,7 +157,7 @@ Family is starting with **CashApp or Venmo**. Both plug in as a **button + print
 
 ## 9. Open items to confirm with the family
 
-1. **Donation handle** — CashApp `$Cashtag` or Venmo username (and confirm the account is a *business* account).
+1. **Donation handle** — the CashApp `$Cashtag` (and confirm the account is a *business* account).
 2. **Domain name** — preferred URL (e.g. `forever13foundation.org`).
 3. **Team photos** — headshots for each member; who to placeholder.
 4. **Connor's story photos** — which images go with the story vs. gallery.

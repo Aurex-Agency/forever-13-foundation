@@ -66,34 +66,11 @@
     floatBar.classList.add("is-visible");
   }
 
-  /* ------------------------------ Curated scroll animation (data-anim) */
-  var animEls = document.querySelectorAll("[data-anim], .reveal");
+  /* Scroll-entrance effects are pure CSS (scroll-driven animations), so
+     nothing here can ever leave content hidden. */
   var prefersReduced = window.matchMedia(
     "(prefers-reduced-motion: reduce)"
   ).matches;
-  function activate(el) {
-    // Per-element delay lives in CSS via the --d custom property; the class
-    // just triggers the transition. data-anim -> "in", .reveal -> "is-in".
-    el.classList.add(el.hasAttribute("data-anim") ? "in" : "is-in");
-  }
-  if (animEls.length && "IntersectionObserver" in window && !prefersReduced) {
-    var animObs = new IntersectionObserver(
-      function (entries, obs) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            activate(entry.target);
-            obs.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
-    );
-    animEls.forEach(function (el) {
-      animObs.observe(el);
-    });
-  } else {
-    animEls.forEach(activate);
-  }
 
   /* --------------------------------------------------------- Lightbox */
   var gallery = document.querySelector("[data-gallery]");

@@ -1,18 +1,14 @@
 /* Forever 13 Foundation behavior
    Progressive enhancement: the site is fully readable with JS disabled.
+   All settings live in assets/js/config.js (window.F13).
    ------------------------------------------------------------------------ */
 (function () {
   "use strict";
 
-  /* --------------------------------------------------------------------
-     Donate configuration: SINGLE SOURCE OF TRUTH.
-     When the foundation's real handle is ready, set the values below.
-     Every Donate button on the site reads from here, so wiring it up is
-     a one-line change. To move to Zeffy later, just swap DONATE_URL.
-     -------------------------------------------------------------------- */
-  var DONATE_URL = ""; // e.g. "https://cash.app/$Forever13" or Venmo/Zeffy link
-  var DONATE_LABEL = "Donate in Connor's Memory";
+  var CFG = window.F13 || {};
 
+  /* ------------------------------------------------------ Donate buttons */
+  var DONATE_URL = CFG.DONATE_URL || "";
   var donateButtons = document.querySelectorAll("[data-donate]");
   donateButtons.forEach(function (btn) {
     if (DONATE_URL) {
@@ -73,6 +69,8 @@
   ).matches;
 
   /* --------------------------------------------------------- Lightbox */
+  /* Uses event delegation + a live item list so photos added later by the
+     Cloudinary gallery loader work without rebinding. */
   var gallery = document.querySelector("[data-gallery]");
   var lightbox = document.querySelector("[data-lightbox]");
   if (gallery && lightbox) {
@@ -80,38 +78,41 @@
     var btnClose = lightbox.querySelector("[data-lightbox-close]");
     var btnPrev = lightbox.querySelector("[data-lightbox-prev]");
     var btnNext = lightbox.querySelector("[data-lightbox-next]");
-    var items = Array.prototype.slice.call(
-      gallery.querySelectorAll("[data-full]")
-    );
     var current = -1;
     var lastFocused = null;
 
-    function show(index) {
+    var itemsNow = function () {
+      return Array.prototype.slice.call(gallery.querySelectorAll("[data-full]"));
+    };
+
+    var show = function (index) {
+      var items = itemsNow();
+      if (!items.length) return;
       if (index < 0) index = items.length - 1;
       if (index >= items.length) index = 0;
       current = index;
       var el = items[index];
       lbImg.setAttribute("src", el.getAttribute("data-full"));
       lbImg.setAttribute("alt", el.getAttribute("data-alt") || "");
-    }
-    function open(index) {
+    };
+    var openAt = function (index) {
       lastFocused = document.activeElement;
       show(index);
       lightbox.classList.add("is-open");
       document.body.style.overflow = "hidden";
       btnClose.focus();
-    }
-    function close() {
+    };
+    var close = function () {
       lightbox.classList.remove("is-open");
       document.body.style.overflow = "";
       lbImg.removeAttribute("src");
       if (lastFocused) lastFocused.focus();
-    }
+    };
 
-    items.forEach(function (el, i) {
-      el.addEventListener("click", function () {
-        open(i);
-      });
+    gallery.addEventListener("click", function (e) {
+      var el = e.target.closest("[data-full]");
+      if (!el || !gallery.contains(el)) return;
+      openAt(itemsNow().indexOf(el));
     });
     if (btnClose) btnClose.addEventListener("click", close);
     if (btnPrev)
@@ -131,6 +132,51 @@
       else if (e.key === "ArrowLeft") show(current - 1);
       else if (e.key === "ArrowRight") show(current + 1);
     });
+  }
+
+  /* ----------------------------------- Cloudinary gallery auto-populate */
+  /* Lists every image tagged GALLERY_TAG in the foundation's Cloudinary
+     account and appends it to the gallery grid, newest first. Fails silently
+     (placeholders stay) until Cloudinary is configured in config.js. */
+  if (gallery && CFG.CLOUDINARY_CLOUD_NAME) {
+    var cloud = CFG.CLOUDINARY_CLOUD_NAME;
+    var tag = CFG.GALLERY_TAG || "forever13-gallery";
+    var base = "https://res.cloudinary.com/" + cloud + "/image/upload/";
+    fetch("https://res.cloudinary.com/" + cloud + "/image/list/" + tag + ".json")
+      .then(function (r) {
+        if (!r.ok) throw new Error("list unavailable");
+        return r.json();
+      })
+      .then(function (data) {
+        var resources = (data.resources || []).sort(function (a, b) {
+          return new Date(b.created_at) - new Date(a.created_at);
+        });
+        if (!resources.length) return;
+        // Real photos have arrived: retire the placeholder tiles and note.
+        gallery
+          .querySelectorAll('.gallery__item[aria-hidden="true"]')
+          .forEach(function (el) {
+            el.remove();
+          });
+        var note = document.querySelector(".gallery__note");
+        if (note) note.textContent = "Tap any photo to see it full screen.";
+        resources.forEach(function (rc) {
+          var id = rc.public_id + "." + (rc.format || "jpg");
+          var btn = document.createElement("button");
+          btn.className = "gallery__item";
+          btn.setAttribute("data-full", base + "f_auto,q_auto,w_1600/" + id);
+          btn.setAttribute("data-alt", "Forever 13 Foundation event photo");
+          var img = document.createElement("img");
+          img.src = base + "f_auto,q_auto,w_700/" + id;
+          img.alt = "Forever 13 Foundation event photo";
+          img.loading = "lazy";
+          btn.appendChild(img);
+          gallery.appendChild(btn);
+        });
+      })
+      .catch(function () {
+        /* Not configured or resource list disabled; placeholders remain. */
+      });
   }
 
   /* ------------------------------------------- Hero watermark parallax */

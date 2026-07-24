@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Photos | Forever 13 Foundation</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <style>
+      .uploader {
+        min-height: 70vh;
+        display: grid;
+        place-items: center;
+        padding-block: var(--space-6);
+      }
+      .uploader__card {
+        width: min(30rem, 100%);
+        background: var(--card);
+        border: 2px solid var(--ink);
+        border-radius: var(--r);
+        box-shadow: var(--hard);
+        padding: var(--space-5);
+        text-align: center;
+      }
+      .uploader__card img.logo {
+        height: 3.2rem;
+        width: auto;
+        margin: 0 auto var(--space-4);
+      }
+      .uploader__card h1 {
+        font-size: 1.7rem;
+        margin-bottom: var(--space-2);
+      }
+      .uploader__card p {
+        color: var(--ink-2);
+        font-size: 1rem;
+      }
+      .uploader__card form {
+        margin-top: var(--space-4);
+        display: flex;
+        gap: var(--space-2);
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .uploader__card input[type="password"] {
+        font: inherit;
+        padding: 0.85rem 1rem;
+        border: 2px solid var(--ink);
+        border-radius: var(--r);
+        background: var(--paper);
+        min-width: 12rem;
+      }
+      .uploader__status {
+        margin-top: var(--space-3);
+        font-weight: 600;
+        color: var(--blue-deep);
+        min-height: 1.5em;
+      }
+      .uploader__hint {
+        margin-top: var(--space-4);
+        font-size: 0.85rem;
+        color: var(--ink-3);
+      }
+      .hidden {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="uploader section">
+      <svg class="cloud" style="top: 10%; left: 4%; width: 12rem; --dur: 30s" aria-hidden="true"><use href="#cloud" /></svg>
+      <svg class="cloud cloud--tint" style="bottom: 12%; right: 4%; width: 14rem; --dur: 26s; --del: -9s" aria-hidden="true"><use href="#cloud" /></svg>
+      <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+        <symbol id="cloud" viewBox="0 0 120 44">
+          <g fill="currentColor">
+            <ellipse cx="30" cy="30" rx="22" ry="13" />
+            <ellipse cx="58" cy="21" rx="21" ry="15" />
+            <ellipse cx="88" cy="30" rx="24" ry="13" />
+            <ellipse cx="60" cy="33" rx="42" ry="10" />
+          </g>
+        </symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20.7C7.3 17.3 3 13.6 3 9.6 3 7 5 5 7.6 5c1.6 0 3 .8 3.9 2.1C12.4 5.8 13.8 5 15.4 5 18 5 20 7 20 9.6c0 4-4.3 7.7-8 11.1z" /></symbol>
+      </svg>
+
+      <div class="uploader__card">
+        <img class="logo" src="assets/img/logo.png" alt="Forever 13 Foundation" />
+
+        <!-- Step 0: shown until Cloudinary is configured in config.js -->
+        <div data-step="unconfigured" class="hidden">
+          <h1>Almost ready</h1>
+          <p>
+            Photo uploads are not connected yet. Once the Cloudinary account
+            details are added to the site settings, this page will let the
+            family add gallery photos straight from a phone.
+          </p>
+        </div>
+
+        <!-- Step 1: passcode -->
+        <div data-step="gate" class="hidden">
+          <h1>Family photo uploads</h1>
+          <p>Enter the family passcode to add photos to the event gallery.</p>
+          <form data-gate-form>
+            <input type="password" name="passcode" placeholder="Passcode" autocomplete="off" required />
+            <button class="btn" type="submit">Continue</button>
+          </form>
+          <p class="uploader__status" data-gate-status></p>
+        </div>
+
+        <!-- Step 2: upload -->
+        <div data-step="upload" class="hidden">
+          <h1>Add photos to the gallery</h1>
+          <p>
+            Tap the button, choose pictures from your camera roll, and they will
+            appear on the site's gallery page automatically.
+          </p>
+          <form>
+            <button class="btn btn--lg" type="button" data-open-widget>
+              <svg style="width: 1.05em; height: 1.05em" aria-hidden="true"><use href="#i-heart" /></svg>
+              Add photos
+            </button>
+          </form>
+          <p class="uploader__status" data-upload-status></p>
+          <p class="uploader__hint">
+            Uploaded the wrong picture? It can be removed in the Cloudinary
+            Media Library, and it will disappear from the site.
+          </p>
+          <p><a class="textlink" href="gallery.html">See the gallery</a></p>
+        </div>
+
+        <p class="uploader__hint">
+          <a class="textlink" href="index.html">Back to the website</a>
+        </p>
+      </div>
+    </main>
+
+    <script src="assets/js/config.js"></script>
+    <script src="https://upload-widget.cloudinary.com/latest/global/all.js" defer></script>
+    <script>
+      (function () {
+        "use strict";
+        var CFG = window.F13 || {};
+        var configured = CFG.CLOUDINARY_CLOUD_NAME && CFG.CLOUDINARY_UPLOAD_PRESET;
+        var steps = {
+          unconfigured: document.querySelector('[data-step="unconfigured"]'),
+          gate: document.querySelector('[data-step="gate"]'),
+          upload: document.querySelector('[data-step="upload"]'),
+        };
+        function showStep(name) {
+          Object.keys(steps).forEach(function (k) {
+            steps[k].classList.toggle("hidden", k !== name);
+          });
+        }
+
+        if (!configured) {
+          showStep("unconfigured");
+          return;
+        }
+        var unlocked = sessionStorage.getItem("f13_upload_ok") === "1";
+        showStep(unlocked ? "upload" : "gate");
+
+        var gateForm = document.querySelector("[data-gate-form]");
+        var gateStatus = document.querySelector("[data-gate-status]");
+        gateForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var val = gateForm.passcode.value.trim();
+          if (val && val === String(CFG.UPLOAD_PASSCODE || "")) {
+            sessionStorage.setItem("f13_upload_ok", "1");
+            showStep("upload");
+          } else {
+            gateStatus.textContent = "That passcode does not match. Try again.";
+          }
+        });
+
+        var uploadStatus = document.querySelector("[data-upload-status]");
+        var uploaded = 0;
+        var widget = null;
+        function openWidget() {
+          if (!window.cloudinary) {
+            uploadStatus.textContent =
+              "The uploader is still loading. Give it a second and tap again.";
+            return;
+          }
+          if (!widget) {
+            widget = window.cloudinary.createUploadWidget(
+              {
+                cloudName: CFG.CLOUDINARY_CLOUD_NAME,
+                uploadPreset: CFG.CLOUDINARY_UPLOAD_PRESET,
+                tags: [CFG.GALLERY_TAG || "forever13-gallery"],
+                sources: ["local", "camera"],
+                multiple: true,
+                maxFiles: 30,
+                maxFileSize: 20000000,
+                clientAllowedFormats: ["image"],
+              },
+              function (error, result) {
+                if (error) {
+                  uploadStatus.textContent =
+                    "Something went wrong. Please try again.";
+                  return;
+                }
+                if (result && result.event === "success") {
+                  uploaded += 1;
+                  uploadStatus.textContent =
+                    uploaded === 1
+                      ? "1 photo uploaded. It will appear in the gallery shortly."
+                      : uploaded + " photos uploaded. They will appear in the gallery shortly.";
+                }
+              }
+            );
+          }
+          widget.open();
+        }
+        document
+          .querySelector("[data-open-widget]")
+          .addEventListener("click", openWidget);
+      })();
+    </script>
+  </body>
+</html>

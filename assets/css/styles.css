@@ -225,6 +225,30 @@ main,
   filter: none;
   opacity: 1;
 }
+.cloud--ink {
+  color: rgba(255, 255, 255, 0.05);
+  filter: none;
+  opacity: 1;
+}
+/* Soft twinkling sparkles */
+.spark {
+  position: absolute;
+  z-index: 0;
+  color: #fff;
+  opacity: 0.5;
+  pointer-events: none;
+  animation: twinkle var(--tdur, 4s) ease-in-out var(--tdel, 0s) infinite alternate;
+}
+@keyframes twinkle {
+  from {
+    opacity: 0.12;
+    transform: scale(0.75) rotate(-8deg);
+  }
+  to {
+    opacity: 0.65;
+    transform: scale(1.05) rotate(8deg);
+  }
+}
 @keyframes drift {
   from {
     transform: translateX(-14px) translateY(0);
@@ -1318,6 +1342,11 @@ main,
   background: var(--ink);
   color: #b4ab9c;
   padding-block: var(--space-6) var(--space-4);
+  overflow: hidden;
+}
+.site-footer .container {
+  position: relative;
+  z-index: 1;
 }
 .site-footer a {
   color: #d6cfc2;
@@ -1725,6 +1754,7 @@ main,
   }
   .marquee__track,
   .cloud,
+  .spark,
   .floaty {
     animation: none;
   }

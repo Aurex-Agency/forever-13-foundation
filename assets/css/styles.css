@@ -1156,13 +1156,16 @@ main,
 }
 .roster__row {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-4);
+  align-items: center;
+  gap: var(--space-3);
   padding: 0.75rem 1.1rem;
   cursor: pointer;
   list-style: none;
   transition: background-color 0.2s var(--ease);
+}
+.roster__row > span:first-child {
+  flex: 1;
+  min-width: 0;
 }
 .roster__row::-webkit-details-marker {
   display: none;
@@ -1203,11 +1206,16 @@ main,
   font-weight: 500;
 }
 .roster__row .role {
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--blue);
+  background: var(--blue-050);
+  border: 1px solid rgba(10, 92, 245, 0.25);
+  border-radius: var(--r-sm);
+  padding: 0.3rem 0.55rem;
+  white-space: nowrap;
   text-align: right;
   flex: none;
 }

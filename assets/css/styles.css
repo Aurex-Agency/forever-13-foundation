@@ -386,7 +386,7 @@ main,
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   -webkit-backdrop-filter: saturate(1.3) blur(12px);
   backdrop-filter: saturate(1.3) blur(12px);
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 1px solid var(--rule-strong);
 }
 .site-header__inner {
   display: flex;
@@ -705,7 +705,6 @@ main,
 /* --------------------------------------------------------------- Mission */
 .mission {
   background: var(--paper-2);
-  border-bottom: 2px solid var(--ink);
 }
 .mission__grid {
   display: grid;
@@ -944,7 +943,6 @@ main,
 /* ------------------------------------------------------------------ Connor */
 .connor {
   background: var(--paper-2);
-  border-block: 2px solid var(--ink);
 }
 .connor__grid {
   display: grid;
@@ -1157,7 +1155,6 @@ main,
 /* -------------------------------------------------------------------- FAQ */
 .faq {
   background: var(--paper-2);
-  border-top: 2px solid var(--ink);
 }
 .faq__grid {
   display: grid;
@@ -1321,7 +1318,6 @@ main,
   background: var(--ink);
   color: #b4ab9c;
   padding-block: var(--space-6) var(--space-4);
-  border-top: 2px solid var(--ink);
 }
 .site-footer a {
   color: #d6cfc2;
@@ -1410,7 +1406,7 @@ main,
 /* ---------------------------------------------------------------- Gallery */
 .gallery-hero {
   background: var(--paper-2);
-  border-bottom: 2px solid var(--ink);
+  border-bottom: 1px solid var(--rule-strong);
   text-align: center;
   padding-block: clamp(var(--space-6), 6vw, var(--space-7));
   position: relative;

@@ -10,8 +10,8 @@ window.F13 = {
   /* Cloudinary photo uploads (see assets/img/README.md and PLAN.md).
      CLOUD_NAME comes from the Cloudinary dashboard home.
      UPLOAD_PRESET is the name of an UNSIGNED upload preset. */
-  CLOUDINARY_CLOUD_NAME: "",
-  CLOUDINARY_UPLOAD_PRESET: "",
+  CLOUDINARY_CLOUD_NAME: "eorqlvlw",
+  CLOUDINARY_UPLOAD_PRESET: "fl13uploads",
 
   /* Tag applied to uploaded photos; the gallery lists images with this tag. */
   GALLERY_TAG: "forever13-gallery",

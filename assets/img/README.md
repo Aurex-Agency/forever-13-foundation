@@ -13,7 +13,8 @@ Originals are kept in `source/` for re-editing.
 | `connor-memory.jpg` | Connor's story | `Pictures.jpeg` (holding his baby portrait) |
 | `family-event.jpg` | The Family + Gallery | `b5cad47e…jpg` (event group photo) |
 | `mission-smile.jpg` | Mission polaroid | square crop of `IMG_0833.jpeg` |
-| `event-balloons.jpg` | What We Do pillar | crop of the event group photo |
+| `pillar-fundraising.jpg` | What We Do pillar 02 | crop of Connor with his backpack (client-supplied HEIC) |
+| `pillar-kindness.jpg` | What We Do pillar 03 | crop of Connor's 13th birthday cake photo (client-supplied) |
 | `favicon.png` + `apple-touch-icon.png` | Browser tab / home screen | the "13" cut from the official logo |
 | `community.jpg` | What We Do strip | wide crop of the event group photo |
 | `giving.jpg` | What We Do strip | crop of `Pictures.jpeg` (Connor + baby portrait) |

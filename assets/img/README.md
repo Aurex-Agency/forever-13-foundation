@@ -16,6 +16,7 @@ Originals are kept in `source/` for re-editing.
 | `pillar-fundraising.jpg` | What We Do pillar 02 | crop of Connor with his backpack (client-supplied HEIC) |
 | `pillar-kindness.jpg` | What We Do pillar 03 | crop of Connor's 13th birthday cake photo (client-supplied) |
 | `favicon.png` + `apple-touch-icon.png` | Browser tab / home screen | the "13" cut from the official logo |
+| `donate-qr.png` | Give section | generated QR for cash.app/$theforever13 |
 | `community.jpg` | What We Do strip | wide crop of the event group photo |
 | `giving.jpg` | What We Do strip | crop of `Pictures.jpeg` (Connor + baby portrait) |
 
@@ -23,7 +24,6 @@ Originals are kept in `source/` for re-editing.
 
 | File | Where | Notes |
 | --- | --- | --- |
-| `donate-qr.png` | Give section | The CashApp/Venmo QR. Uncomment the `<img>` in `index.html`'s `.qr`. |
 | `gallery-02.jpg` … | Gallery | Event photos. Follow the commented pattern in `gallery.html`. Phase 2 makes this a self-serve phone upload (see `PLAN.md`). |
 | `og-image.jpg` | Social share card | 1200×630. Optional, currently the hero photo is used. |
 

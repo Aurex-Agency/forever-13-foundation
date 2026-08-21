@@ -44,7 +44,7 @@ Connor, and a tone that is warm, reverent, and hopeful rather than somber.
 - **Home page:** persistent donate action, hero, mission, Connor's story, team,
   a second larger donate block with QR, footer.
 - **Gallery page:** responsive photo grid with full-screen lightbox.
-- **Donations:** starting with CashApp or Venmo as a button + QR code. The
+- **Donations:** CashApp only, as a button + QR code. The
   donate link must live in ONE config value so switching providers (and, if the
   foundation becomes a 501(c)(3), moving to Zeffy) is a ~5-minute change.
 - **Explicitly undecided / to be wired later:** the real donation handle

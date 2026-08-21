@@ -1,47 +1,40 @@
-# Image assets — drop-in manifest
+# Image assets
 
-The site ships with tasteful placeholders so it looks finished today. To go
-live with real imagery, drop the files below into this folder using **exactly
-these filenames** — no code changes needed. Every placeholder in the HTML is
-labeled with the filename it expects.
+Real, web-optimized images from the client's Google Drive are now in place.
+Originals are kept in `source/` for re-editing.
 
-## Brand
+## In use (real, optimized)
 
-| Filename | What it is | Source (client Google Drive → "Logos" folder) |
+| File | Where | From (Drive) |
 | --- | --- | --- |
-| `logo.png` | Official Forever 13 logo, transparent PNG, ~600px+ wide | `png (1).png` |
-| `logo-mark.svg` | *(optional)* wings+13 mark only, if exported from the `.ai` | `vetor.ai` |
-| `favicon.png` | 512×512 square version of the mark for the browser tab | derive from logo |
-| `og-image.jpg` | 1200×630 social share card (Connor + name) | compose from a hero photo |
+| `logo.png` | Header + footer | `png (1).png` (downscaled to 1200px) |
+| `connor-hero.jpg` | Home hero portrait | `IMG_0834.jpeg` (beach) |
+| `connor-smile.jpg` | "Who he was" | `IMG_0833.jpeg` (car) |
+| `connor-memory.jpg` | Connor's story | `Pictures.jpeg` (holding his baby portrait) |
+| `family-event.jpg` | The Family + Gallery | `b5cad47e…jpg` (event group photo) |
+| `mission-smile.jpg` | Mission polaroid | square crop of `IMG_0833.jpeg` |
+| `pillar-fundraising.jpg` | What We Do pillar 02 | crop of Connor with his backpack (client-supplied HEIC) |
+| `pillar-kindness.jpg` | What We Do pillar 03 | crop of Connor's 13th birthday cake photo (client-supplied) |
+| `favicon.png` + `apple-touch-icon.png` | Browser tab / home screen | the "13" cut from the official logo |
+| `donate-qr.png` | Give section | generated QR for cash.app/$theforever13 |
+| `community.jpg` | What We Do strip | wide crop of the event group photo |
+| `giving.jpg` | What We Do strip | crop of `Pictures.jpeg` (Connor + baby portrait) |
 
-Until `logo.png` is added, the header shows a faithful hand-built wings+13
-monogram (inline SVG). Once the official logo is in place, see the note in
-`index.html` near the header to switch the wordmark to the image.
+## Still to add before launch
 
-## Connor (Home page)
-
-| Filename | Slot | Notes |
+| File | Where | Notes |
 | --- | --- | --- |
-| `connor-hero.jpg` | Hero portrait | The single strongest photo of Connor. Portrait/vertical works best. |
-| `connor-story-1.jpg` | Connor's story | A candid, warm photo. |
-| `connor-story-2.jpg` | Connor's story | Optional second photo. |
+| `gallery-02.jpg` … | Gallery | Event photos. Follow the commented pattern in `gallery.html`. Phase 2 makes this a self-serve phone upload (see `PLAN.md`). |
+| `og-image.jpg` | Social share card | 1200×630. Optional, currently the hero photo is used. |
 
-## Team (Home page)
+## Regenerating optimized images
 
-Headshots are **deferred by the client** for now — the team section uses elegant
-initials tiles. When ready, add `team-<firstname>.jpg` (e.g. `team-collin.jpg`)
-and follow the note in `index.html`'s team section to switch a tile to a photo.
+`source/` holds the raw originals. To re-optimize (e.g. after adding new
+photos), resize to ~1200–1800px wide and save progressive JPEG at ~q82. The
+one-off script used lived in the build; any image tool (Squoosh, ImageMagick,
+Pillow) does the same.
 
-## Gallery (gallery.html)
+## Tips
 
-Add event photos as `gallery-01.jpg`, `gallery-02.jpg`, … and add one `<figure>`
-per photo following the commented pattern in `gallery.html`. (Phase 2 replaces
-this with the self-serve phone upload flow described in `PLAN.md` §6, so the
-family never edits HTML.)
-
-## Image tips
-
-- Compress before uploading (TinyPNG/Squoosh) — aim < 400 KB each for fast
-  mobile load. The CSS handles cropping/fit; any orientation works.
-- Provide meaningful `alt` text when you add a photo (the placeholders show
-  where). It matters for screen readers and for people Connor's story reaches.
+- Keep web images < ~350 KB for fast mobile load.
+- Always add meaningful `alt` text for screen readers.

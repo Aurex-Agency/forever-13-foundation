@@ -16,7 +16,7 @@ Originals are kept in `source/` for re-editing.
 | `pillar-fundraising.jpg` | What We Do pillar 02 | crop of Connor with his backpack (client-supplied HEIC) |
 | `pillar-kindness.jpg` | What We Do pillar 03 | crop of Connor's 13th birthday cake photo (client-supplied) |
 | `favicon.png` + `apple-touch-icon.png` | Browser tab / home screen | the "13" cut from the official logo |
-| `donate-qr.png` | Give section | generated QR for cash.app/$theforever13 |
+| `donate-qr.png` | Give section | generated QR for cash.app/$donateforever13 |
 | `community.jpg` | What We Do strip | wide crop of the event group photo |
 | `giving.jpg` | What We Do strip | crop of `Pictures.jpeg` (Connor + baby portrait) |
 
